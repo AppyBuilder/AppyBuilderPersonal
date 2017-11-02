@@ -36,6 +36,6 @@ IF your computer can't associate the .cmd, just rename it to .bat
 
 ## Info:
 FOR UP-TO-DATE INFO, PLEASE SEE LINKS BELOW:
-http://Community.AppyBuilder.com
-http://AppyBuilder.com
-email: info@AppyBuilder.com
+Forum: http://Community.AppyBuilder.com
+Website: http://AppyBuilder.com
+Email: info@AppyBuilder.com

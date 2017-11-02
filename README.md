@@ -18,7 +18,7 @@ Make sure that Java is installed on your computer
 
 AppyBuilder includes a front-end and a buildserver for building .apk
 
-## Starting frontend:
+## Starting frontend (user interface)
 Use File Explorer to switch to the new folder (AppyBuilderPersonl)
 Next, double click onWinStartAppyBuilderServer.bat to start the frontend (or equivelant .sh file)
   IF the popup window immediately closes, this means that your java path is not setup properly.
@@ -27,15 +27,18 @@ Next, double click onWinStartAppyBuilderServer.bat to start the frontend (or equ
     
    At this time, you can start a browser, and enter http://localhost:8888 
 
-## Starting frontend:
+## Starting backend (build server):
 If you are attempting to build .apk, you'll need to start the local buildserver
 Use File Explorer to switch to the new folder (AppyBuilderPersonl)
-Next, double click on WinStartAppyBuilderServer.cmd to start the buildserver (or equivelant .sh file)
-IF your computer can't associate the .cmd, just rename it to .bat
+Next, double click on WinStartAppyBuilderServer.bat to start the buildserver (or equivelant .sh file)
 
 
 ## Info:
 FOR UP-TO-DATE INFO, PLEASE SEE LINKS BELOW:
+
 Forum: http://Community.AppyBuilder.com
+
 Website: http://AppyBuilder.com
+
 Email: info@AppyBuilder.com
+

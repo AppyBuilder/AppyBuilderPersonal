@@ -14,7 +14,8 @@ This is the personal version that can be run on Windows, Linux, or Mac for perso
 Please note that since all Personal Servers use local version of Google App Engine (GAE), they are NOT stable and at unpredictable times, you may loose all your projects / data. As result, consider using the online version at http://Gold.AppyBuilder.com and use the Personal Version only for learning NOT production.
 
 ## Usage:
-Make sure that Java is installed on your computer
+Make sure that Java 8 JDK is installed on your computer and path is setup properly.
+You'll need JDK because jarsigner executable is required to create create a keystore certificate for your app
 
 AppyBuilder includes a front-end and a buildserver for building .apk
 

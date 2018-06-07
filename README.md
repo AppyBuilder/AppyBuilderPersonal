@@ -24,14 +24,13 @@ Make sure you have the JDK, and not the JRE.
 AppyBuilder includes a front-end and a buildserver for building .apk files.
 
 ## Starting frontend (user interface):
-Use File Explorer to switch to the new folder (AppyBuilderPersonl)
-Next, double click onWinStartAppyBuilderServer.bat to start the frontend (or equivalent .sh file)
+Use File Explorer to switch to the new folder (AppyBuilderPersonl). Next, double click onWinStartAppyBuilderServer.bat to start the frontend (or equivalent .sh file)
   IF the popup window immediately closes, this means that your java path is not setup properly.
     You may have to update the file to directly point to your java.exe; e.g.
     
     C:\Program Files\Java\jre1.8.0_121\bin\java.exe
     
-  At this time, you can start a browser, and enter http://localhost:8888 
+  At this time, you can start a browser, and enter http://localhost:8888. 
 
 ## Starting backend (build server):
 If you are attempting to build .apk, you'll need to start the local buildserver.

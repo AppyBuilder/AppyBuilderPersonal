@@ -1,4 +1,4 @@
-<img src="https://github.com/AppyBuilder/AppyBuilder/blob/master/AppyBuilder/appinventor-sources/appinventor/aiplayapp/assets/Title.png" alt="AppyBuilder" width="301" height="115" border="10" />
+<img src="https://github.com/Kanishka-Developer/AppyBuilderPersonal/blob/patch-1/logo.png" alt="AppyBuilder" width="316" height="70" border="10" />
 
 # Welcome to AppyBuilder Personal version
 
@@ -39,6 +39,9 @@ Next, double click on WinStartAppyBuilderServer.bat to start the buildserver (or
 ## Info:
 FOR UP-TO-DATE INFO, PLEASE SEE LINKS BELOW:
 
+
 Forum: http://community.AppyBuilder.com
+
 Website: http://AppyBuilder.com
+
 Email: info@AppyBuilder.com

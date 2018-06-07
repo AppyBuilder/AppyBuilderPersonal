@@ -1,5 +1,7 @@
 <img src="https://github.com/Kanishka-Developer/AppyBuilderPersonal/blob/patch-1/logo.png" alt="AppyBuilder" width="316" height="70" border="10" />
 
+
+
 # Welcome to AppyBuilder Personal version
 
 ## Introduction
@@ -26,6 +28,7 @@ Use File Explorer to switch to the new folder (AppyBuilderPersonl)
 Next, double click onWinStartAppyBuilderServer.bat to start the frontend (or equivalent .sh file)
   IF the popup window immediately closes, this means that your java path is not setup properly.
     You may have to update the file to directly point to your java.exe; e.g.
+    
     C:\Program Files\Java\jre1.8.0_121\bin\java.exe
     
   At this time, you can start a browser, and enter http://localhost:8888 

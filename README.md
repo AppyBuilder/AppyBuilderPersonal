@@ -1,4 +1,4 @@
-<img src="https://github.com/AppyBuilder/AppyBuilder/blob/master/AppyBuilder/appinventor-sources/appinventor/aiplayapp/assets/Title.png" alt="AppyBuilder" width="301" height="115" border="10" />
+<img src="https://github.com/AppyBuilder/AppyBuilder-Source/blob/master/appinventor/aiplayapp/assets/Title.png" alt="AppyBuilder" width="301" height="115" border="10" />
 
 # Welcome to AppyBuilder Personal version
 

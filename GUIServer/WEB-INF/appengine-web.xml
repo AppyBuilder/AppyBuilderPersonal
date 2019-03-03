@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
   <application></application>
-  <version>23</version>
+  <url-stream-handler>native</url-stream-handler>
+  <runtime>java8</runtime>
+  <version>1</version>
 
+  <instance-class>F1</instance-class> <!-- F1: Basic for autoscaling. If B series (e.g. B2), then use below -->
 
   <!-- Configure serving/caching of GWT files -->
   <static-files>
@@ -25,7 +28,10 @@
     <include path="/reference/**" expiration="1d" />
     <include path="/closure-library/closure/goog/base.js" expiration="1d" />
     <include path="/closure-library/closure/goog/css/dialog.css" expiration="1d" />
+    <include path="/closure-library/closure/goog/css/hsvapalette.css" />
     <include path="/closure-library/closure/goog/deps.js" expiration="1d" />
+    <include path="/leaflet/**" />
+    <include path="/font-awesome/**" />
     <include path="/robots.txt" expiration="30d" />
 
     <!-- These are not cached on purpose -->
@@ -50,6 +56,9 @@
   <sessions-enabled>false</sessions-enabled>
 
   <!-- Configuration and flags -->
+  <threadsafe>true</threadsafe>
+
+  <!-- Enable concurrency in the app engine server -->
   <system-properties>
     <property name="java.util.logging.config.file" value="WEB-INF/logging.properties"/>
 
@@ -74,7 +83,7 @@
 
     <!-- TODO 1: set bucket to empty string before checkin -->
     <!-- Name of storage bucket in Google Cloud Store -->
-    <property name="gcs.bucket" value="yourbucket.appspot.com" />
+    <property name="gcs.bucket" value="goldappybuilder.appspot.com" />
 
     <!-- Whether or not to use GCS for storage -->
     <property name="use.gcs" value="true" />
@@ -108,9 +117,11 @@
     <property name="localauth.mailserver" value="https://osiris.mit.edu/passmail/" />
     <property name="localauth.mailserver.password" value="changeme" />
 
-    <!-- TODO: 2 BEFORE checkin, set to lcoal host, remove own server -->
     <!-- host[:port] to use for connecting to the build server -->
     <property name="build.server.host" value="localhost:9990" />
+
+    <!-- List of round-robin hosts for whitelists -->
+    <property name="whitelist.host.address" value="http://3nportal.com/a2m/ai2Latest/whitelist,http://3nportal.com/a2m/ai2Latest/whitelist" />
 
     <!-- host[:port] to tell build server the app host url to callback
          when deploy AppInventor on other GAE implementation such as
@@ -155,6 +166,8 @@
     <!-- Firebase Secret for the shared datastore -->
     <property name="firebase.secret" value="" />
     <property name="firebase.url" value="" />
+    <!-- TODO: Update below to point to your own firebase accout-->
+    <property name="private.firebase.url" value="https://YOUR-FIREBASE-PROJECT-ID.firebaseio.com/appybuilder/acct" />
 
     <property name="library.url" value="http://appybuilder.com/explore/reference" />
     <property name="get_started.url" value="http://appybuilder.com/explore/get-started" />
@@ -163,16 +176,20 @@
     <property name="troubleshooting.url" value="http://appinventor.mit.edu/explore/ai2/support/troubleshooting" />
     <property name="forums.url" value="http://Community.AppyBuilder.com" />
     <property name="feedback.url" value="http://something.example.com" />
-    <property name="release.notes.url" value="http://appybuilder.com/explore/ReleaseNotes.html" />
-    <property name="tos.url" value="http://appybuilder.com/explore/about/termsofservice.html" />
-    <property name="logo.url" value="http://appinventor.mit.edu" />
+    <property name="release.notes.url" value=" https://help.appybuilder.com/release-notes.html" />
+    <property name="tos.url" value="http://help.appybuilder.com/terms-of-service.html" />
+    <property name="logo.url" value="http://appybuilder.com" />
     <property name="guide.url" value="http://help.appybuilder.com/" />
+    <property name="community.url" value="http://community.appybuilder.com/" />
     <property name="reference.components.url" value="/reference/components/" />
 
-  </system-properties>
+    <!-- CloudDB secret keys - Update to your own cloudDB-->
+    <property name="clouddb.server" value="changeme!"/>
+    <property name="clouddb.uuid.secret" value="changeme!"/>
+    <property name="clouddb.secret" value="mydifficultpassword" />
 
-  <!-- Enable concurrency in the app engine server -->
-  <threadsafe>true</threadsafe>
+
+  </system-properties>
 
 
 </appengine-web-app>

@@ -1,0 +1,2 @@
+serviceClass: com.google.appinventor.shared.rpc.cloudDB.CloudDBAuthService
+path: B148609FF694DF5EC2B1F1FF1156BCC7.gwt.rpc

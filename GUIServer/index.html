@@ -1,21 +1,27 @@
 <!-- Copyright 2007-2009 Google Inc. All Rights Reserved. -->
 <!-- Copyright 2011-2016 Massachusetts Institute of Technology. All Rights Reserved. -->
 
-<!-- Copyright 2016-2018 AppyBuilder.com, All Rights Reserved - Info@AppyBuilder.com -->
+<!-- Copyright 2016-2020 AppyBuilder.com, All Rights Reserved - Info@AppyBuilder.com -->
 <!-- https://www.gnu.org/licenses/gpl-3.0.en.html -->
 
 <!DOCTYPE html>
 <html>
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=10">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!--meta name="gwt:property" content="locale=en_US"-->
     <!-- Title is set at runtime. -->
     <title> </title>
     <link type="text/css" rel="stylesheet" href="gwt.css">
-    <link type="text/css" rel="stylesheet" href="Ya.css">
     <link type="text/css" rel="stylesheet" href="assets/blockly.css">
     <link type="text/css" rel="stylesheet" href="assets/ai2blockly.css">
     <link type="text/css" rel="stylesheet" href="closure-library/closure/goog/css/dialog.css">
+    <link type="text/css" rel="stylesheet" href="closure-library/closure/goog/css/hsvapalette.css">
+    <link type="text/css" rel="stylesheet" href="Ya.css">
+    <link type="text/css" rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="leaflet/leaflet.css">
+    <link type="text/css" rel="stylesheet" href="leaflet/leaflet.toolbar.css">
+    <link type="text/css" rel="stylesheet" href="leaflet/leaflet-vector-markers.css">
     <noscript>
       <div class="floatingBox">
         <h2> AppyBuilder needs JavaScript enabled to run.</h2>
@@ -35,26 +41,63 @@
         <li> Firefox 23+ </li>
       </ul>
     </div>
-	
+
+    <!-- if packaging for OFFLINE, uncomment below for ADs-->
+
+    <!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:728px;height:90px"
+         data-ad-client="ca-pub-7889867620272870"
+         data-ad-slot="8364419536"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>-->
     <script type="text/javascript" src="closure-library/closure/goog/base.js"></script>
     <script language="javascript" src="ode/ode.nocache.js"></script>
+    <script src="leaflet/leaflet.js"></script>
+    <script src="leaflet/leaflet.toolbar.js"></script>
+    <script src="leaflet/leaflet-vector-markers.min.js"></script>
+    <script src="leaflet/leaflet-imgicon.js"></script>
+    <script src="leaflet/Path.Drag.js"></script>
+    <script src="leaflet/Leaflet.Editable.js"></script>
+    <script src="leaflet/leaflet.geometryutil.js"></script>
+    <script src="leaflet/leaflet.snap.js"></script>
     <script>
       if (window.navigator.userAgent.indexOf("MSIE") != -1){
           document.getElementById("unsupported").style.display = 'block';
       }
     </script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-88836135-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- analytics for gold -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  gtag('config', 'UA-88836135-2');
-</script>
+        ga('create', 'UA-88836135-1', 'auto');
+        ga('send', 'pageview');
 
+    </script>
 
-
+<!--    <script src="tablefilter.js"></script>
+    <script data-config="">
+        var filtersConfig = {
+            // base_path: 'tablefilter/',
+            base_path: '/',   // nothing here
+            auto_filter: {
+                delay: 110 //milliseconds
+            },
+            filters_row_index: 1,
+            state: true,
+            alternate_rows: true,
+            rows_counter: true,
+            btn_reset: true,
+            status_bar: true,
+            msg_filter: 'Filtering...'
+        };
+        var tf = new TableFilter('projectList', filtersConfig);
+        tf.init();
+    </script>-->
   </body>
 </html>

@@ -9,6 +9,13 @@ Learn more about [AppyBuilder here:](http://help.AppyBuilder.com) or here: http:
 Using blocks, AppyBuilder provides you ability to design and build mobile apps (currently Android) with little or no coding skills!
 <img src="https://help.appybuilder.com/assets/tutRatingBar3.png" alt="" />
 
+## 👍 How to Contribute
+1. Fork it
+2. Create your feature branch (git checkout -b my-new-feature)
+3. Commit your changes (git commit -am 'Add some feature')
+4. Push to the branch (git push origin my-new-feature)
+5. Create new Pull Request
+
 ## Personal Version
 This is the personal version that can be run on Windows, Linux, or Mac for personal purpose.
 Please note that since all Personal Servers use local version of Google App Engine (GAE), they are NOT stable and at unpredictable times, you may loose all your projects / data. As result, consider using the online version at http://Gold.AppyBuilder.com and use the Personal Version only for learning NOT production.

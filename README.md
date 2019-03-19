@@ -21,15 +21,15 @@ This is the personal version that can be run on Windows, Linux, or Mac for perso
 Please note that since all Personal Servers use local version of Google App Engine (GAE), they are NOT stable and at unpredictable times, you may loose all your projects / data. As result, consider using the online version at http://Gold.AppyBuilder.com and use the Personal Version only for learning NOT production.
 
 ## Usage:
-Make sure that Java 8 JDK is installed on your computer and path is setup properly.
+Make sure that **Java 8 JDK** is installed on your computer and path is setup properly.
 You'll need JDK because jarsigner executable is required to create create a keystore certificate for your app
 
 AppyBuilder includes a front-end and a buildserver for building .apk
 
 ## Starting frontend (user interface)
 Use File Explorer to switch to the new folder (AppyBuilderPersonl)
-Next, double click onWinStartAppyBuilderServer.bat to start the frontend (or equivelant .sh file)
-  IF the popup window immediately closes, this means that your java path is not setup properly.
+Next, double click on **WinStartAppyBuilderServer.bat** to start the frontend (or equivelant .sh file)
+  IF the popup window immediately closes, this means that your java path is not setup properly
     You may have to update the file to directly point to your java.exe; e.g.
     C:\Program Files\Java\jre1.8.0_121\bin\java.exe
     
@@ -39,6 +39,11 @@ Next, double click onWinStartAppyBuilderServer.bat to start the frontend (or equ
 If you are attempting to build .apk, you'll need to start the local buildserver
 Use File Explorer to switch to the new folder (AppyBuilderPersonl)
 Next, double click on WinStartAppyBuilderServer.bat to start the buildserver (or equivelant .sh file)
+
+## Troubleshooting:
+When starting the server (backend or frontend), if window immediately closes, it could mean that:
+1. Your java path not setup properly - setup your java path or update script files to point to your java
+2. Address (8888) already in use (you may have to use task manager to kill java)
 
 
 ## Info:

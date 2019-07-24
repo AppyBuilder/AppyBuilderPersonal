@@ -81,10 +81,8 @@
          Inventor server unless they are listed in the appengine/war/whitelist file -->
     <property name="use.whitelist" value="false"/>
 
-    <!-- TODO 1: set bucket to empty string before checkin -->
     <!-- Name of storage bucket in Google Cloud Store -->
-    <property name="gcs.bucket" value="goldappybuilder.appspot.com" />
-
+    <property name="gcs.bucket" value="" />
     <!-- Whether or not to use GCS for storage -->
     <property name="use.gcs" value="true" />
 
@@ -119,9 +117,6 @@
 
     <!-- host[:port] to use for connecting to the build server -->
     <property name="build.server.host" value="localhost:9990" />
-
-    <!-- List of round-robin hosts for whitelists -->
-    <property name="whitelist.host.address" value="http://3nportal.com/a2m/ai2Latest/whitelist,http://3nportal.com/a2m/ai2Latest/whitelist" />
 
     <!-- host[:port] to tell build server the app host url to callback
          when deploy AppInventor on other GAE implementation such as
@@ -166,8 +161,6 @@
     <!-- Firebase Secret for the shared datastore -->
     <property name="firebase.secret" value="" />
     <property name="firebase.url" value="" />
-    <!-- TODO: Update below to point to your own firebase accout-->
-    <property name="private.firebase.url" value="https://YOUR-FIREBASE-PROJECT-ID.firebaseio.com/appybuilder/acct" />
 
     <property name="library.url" value="http://appybuilder.com/explore/reference" />
     <property name="get_started.url" value="http://appybuilder.com/explore/get-started" />

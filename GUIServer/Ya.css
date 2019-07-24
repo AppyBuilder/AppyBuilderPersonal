@@ -151,7 +151,7 @@ select {
 }
 /* horiz line where paletted, viewer, components, properties are displayed */
 .ode-Box-header {
-  background: #e7ecf0;
+  background: #dce6f5;
   height: 31px;
   border: 1px solid;
   border-color: #d2d2d2 #d2d2d2 #b0b2a7 #d2d2d2;
@@ -686,8 +686,10 @@ select {
 .gwt-TreeItem:hover {
   background-color: #ddeafac2 !important;
     box-shadow:3px 3px 4px rgba(0,0,0,0.2);
+/* If needing hover-animation, then uncomment
   -webkit-transform:translateX(-3px);
   transform:translateX(-3px);
+  */
   border-radius:3px;
   /*   -webkit-animation-name: hvr-pulse;
     animation-name: hvr-pulse;
@@ -717,7 +719,7 @@ gwt-Tree .gwt-TreeItem span:hover,
 /* Young Android Toolbar    kk: top menu background, LightSeaGreen */
 
 .ya-Toolbar {
-  background-color: #3f51b5;
+  background-color: #4e98ff;
   margin-bottom: 1px;
 }
 
@@ -944,11 +946,11 @@ gwt-Tree .gwt-TreeItem span:hover,
 }
 
 .ode-SimplePaletteItem:hover {
-  text-decoration: underline solid black;
+  /*text-decoration: underline solid black;*/
   background-color: #ddeafac2 !important;
     box-shadow:3px 3px 4px rgba(0,0,0,0.2);
-  -webkit-transform:translateX(-3px);
-  transform:translateX(-3px);
+/*   -webkit-transform:translateX(-3px);
+  transform:translateX(-3px); */
   border-radius:3px;
   /*   -webkit-animation-name: hvr-pulse;
     animation-name: hvr-pulse;

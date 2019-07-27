@@ -1518,7 +1518,7 @@
 { "name": "BackgroundImage", "editorType": "asset", "defaultValue": "", "editorArgs": []},
 { "name": "CloseScreenAnimation", "editorType": "screen_animation", "defaultValue": "default", "editorArgs": []},
 { "name": "Icon", "editorType": "asset", "defaultValue": "", "editorArgs": []},
-{ "name": "MaxAPI", "editorType": "max_api_level_options", "defaultValue": "26", "editorArgs": []},
+{ "name": "MaxAPI", "editorType": "max_api_level_options", "defaultValue": "28", "editorArgs": []},
 { "name": "MinAPI", "editorType": "min_api_level_options", "defaultValue": "14", "editorArgs": []},
 { "name": "OpenScreenAnimation", "editorType": "screen_animation", "defaultValue": "default", "editorArgs": []},
 { "name": "Padding", "editorType": "string", "defaultValue": "0", "editorArgs": []},

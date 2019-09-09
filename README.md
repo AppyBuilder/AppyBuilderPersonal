@@ -18,7 +18,8 @@ Using blocks, AppyBuilder provides you ability to design and build mobile apps (
 
 ## Personal Version
 This is the personal version that can be run on Windows, Linux, or Mac for personal purpose.
-Please note that since all Personal Servers use local version of Google App Engine (GAE), they are NOT stable and at unpredictable times, you may loose all your projects / data. As result, consider using the online version at http://Gold.AppyBuilder.com and use the Personal Version only for learning NOT production.
+
+  **DISCLOSURE:** Please note that since all Personal Servers use local version of Google App Engine (GAE), you should make frequent backup of your source (.aia) files. AppyBuilder is not responsible for possible loss of projects.
 
 ## Usage:
 Make sure that **Java 8 JDK** is installed on your computer and path is setup properly.
